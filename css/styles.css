@@ -1,0 +1,189 @@
+body {
+  background: #a6ce2c;
+  background: linear-gradient(0deg, #817e1f 0%, #863119 100%);
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}
+
+/*  General styles*/
+h1 {
+  font-size: 5rem;
+  margin: 2rem 1rem;
+}
+
+@media only screen and (min-width: 40em) {
+  h1 {
+    font-size: 10em;
+    margin: 2em 4rem 1em;
+  }
+}
+
+h2 {
+  border-bottom: 1px solid #cc1;
+  font-family: "Lato", sans-serif;
+  font-size: 3em;
+  color: #fff;
+}
+
+p {
+  line-height: 1.6em;
+  color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+/* ---- Layout Rules ---- */
+main {
+  margin: 10vh 1em 10vh;
+}
+
+.heroSection {
+  min-height: 50vh;
+  padding-top: 3em;
+  text-align: center;
+  height: 100vh;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  padding: 5rem;
+}
+
+/* Navigation Styles*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar #addBtn {
+  width: 10em;
+  outline: 0px;
+  border: none;
+  background: transparent;
+  font-size: 18.5px;
+  font-weight: bold;
+  color: rgb(23, 22, 22);
+  cursor: pointer;
+  transition: 0.5s linear all;
+}
+.navbar #addBtn:hover {
+  background-color: #d9ad0d;
+  color: rgb(255, 255, 255);
+}
+.navbar ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+.navbar .navBtn {
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .navBtn:hover {
+  background: #d9ad0d;
+  color: #fff;
+  transition: ease 0.3s all;
+}
+
+.navbar .active-link {
+  background: #d9ad0d;
+  color: rgb(255, 255, 255);
+  transition: ease 0.3s all;
+}
+
+/* Header Styles */
+.mainHeader {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* Footer Styles */
+.pageFooter {
+  background: #000;
+  padding: 1em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageFooter p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.mainContainer {
+  padding: 1em;
+  text-align: left;
+}
+
+@media only screen and (min-width: 35em) {
+  .mainContainer {
+    max-width: 50em;
+    padding: 4em;
+  }
+}
+
+section:nth-of-type(even) .mainContainer {
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
+}
+
+@media only screen and (max-width: 39.5em) {
+  .navbar #btn {
+    top: 100%;
+    font-size: 17px;
+    width: 7.5em;
+    height: 1.8em;
+  }
+}
+#upBtn {
+  border-radius: 5px;
+  background-color: #d4380c;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  animation: vibrate-1 0.3s linear infinite both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
